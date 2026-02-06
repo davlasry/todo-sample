@@ -25,8 +25,8 @@ h1 {
 
 .add-form button {
   padding: 0.5rem 1rem;
-  background-color: pink;
-  color: white;
+  background-color: yellow;
+  color: black;
   border: none;
   border-radius: 6px;
   cursor: pointer;
