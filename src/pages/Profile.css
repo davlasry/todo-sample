@@ -1,0 +1,176 @@
+.profile-page {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.profile-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.4);
+}
+
+.avatar-button {
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.avatar-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.settings-section h2,
+.theme-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.setting-item {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.setting-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.setting-item label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.setting-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #a855f7;
+}
+
+.setting-item span {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.theme-colors {
+  display: flex;
+  gap: 1rem;
+}
+
+.theme-color {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-color:hover {
+  transform: scale(1.1);
+}
+
+.theme-color.active {
+  border-color: white;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.theme-color.purple {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+}
+
+.theme-color.blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.theme-color.green {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+}
+
+.theme-color.orange {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  .profile-page {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .settings-section h2,
+  .theme-section h2 {
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .setting-item {
+    background: rgba(0, 0, 0, 0.03);
+  }
+
+  .setting-item:hover {
+    background: rgba(0, 0, 0, 0.06);
+  }
+
+  .setting-item span {
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .avatar-button {
+    background: rgba(0, 0, 0, 0.05);
+    color: #213547;
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar-button:hover {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  .theme-color.active {
+    border-color: #213547;
+  }
+}
